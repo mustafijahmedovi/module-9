@@ -1,0 +1,45 @@
+/* text */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-san-normal {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* nav bar */
+
+.g3-home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 230px ;
+}
+
+.g3{
+    font-size: 45;
+    font-weight: bold;   
+}
+.g3 a{
+    text-decoration: none;
+    color: #131313;
+}
+.home-bar{
+    display: flex;
+    gap: 30px;
+    flex: end;
+    list-style: none;
+    font-size: 18;
+    font-weight: medium;
+    text-decoration: none;
+}
+.home-bar a{
+    text-decoration: none;
+    color: #424242;
+}
+.Brand-h3{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
