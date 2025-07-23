@@ -49,7 +49,13 @@
     text-decoration: none;
     color: #FFFFFF;
 }
-
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+}
 /* nav bar */
 
 .g3-home{  
@@ -94,10 +100,101 @@
 }
 .banner-img{
     width: 100%;
+    
+}
+
+
+/* main team section */
+
+.images-team{
+    display: flex;
+    margin-top: 130px;
+    align-items: center;
+}
+.images-all-team{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 24px;
+}
+.images-list{
+    padding-left: 73px;
+    width: 540px;
+    height: 310px;
+}
+.Features{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.list2{
+    color: #FF900E;
+}
+.list3{
+    font-size: 1rem;
+    font-weight: 400;
+}
+/* experience section */
+.box{
+    width: 580px;
+    height: 170px;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 30px 0 rgba(0, 0, 0, 0.25);
+}
+#experience-h3-title{
+    border-left:5px solid #FF900E;
+    padding: 20px;
+}
+.experience-h3{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.experience-h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.experience-p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.experience{
+    gap: 100px;
+}
+#experience-id{
+    padding: 46px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
 }
 /* responsive media quary */
 @media screen and (max-width: 576px)  {
-    .g3-home,.home-bar{
+    .g3-home,
+    .home-bar,
+    .images-team{
         flex-direction: column;
     }
+    .images-all-team{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .images-list{
+        margin-left: 20px;
+    }
 }
+/*  */
+/* medium size device */
+@media screen and (min-width:576px) and (max-width:990px) {
+    .images-team{
+        flex-direction: column;
+    }
+    .images-list{
+        margin: 50px auto;
+    }
+    
+    
+}
+
+
